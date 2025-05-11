@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        background-color: blanchedalmond;
+      }
+      p::first-letter {
+        color: rgb(184, 217, 246);
+        font-size: 80px;
+      }
+      p::selection {
+        background-color: chartreuse;
+        color: chocolate;
+      }
+      /* marker work only for list  */
+      ::marker {
+        color: coral;
+      }
+      h1::before {
+        content: "😊";
+        font-size: 70px;
+      }
+      h1::after {
+        content: "😒";
+        font-size: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>4. Pseudo-Element: denoted by :: (double collon)</h1>
+    <h3>Types of Pseudo Element</h3>
+    <ol>
+      <li>:: first-line</li>
+      <li>:: first-letter</li>
+      <li>:: selectoin</li>
+      <li>:: marker</li>
+      <li>:: before</li>
+      <li>:: after</li>
+    </ol>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur
+      ipsam impedit error dolorem rem, et aliquid cupiditate minus repellendus.
+      Ex nostrum ipsum suscipit, quam quos cumque harum at, hic quaerat nam
+      eaque fuga! Atque aspernatur, nisi, eius temporibus veniam et iusto
+      praesentium pariatur eligendi aliquid quo quos autem hic!
+    </p>
+  </body>
+</html>

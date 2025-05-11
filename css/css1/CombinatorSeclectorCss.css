@@ -1,0 +1,20 @@
+ol{
+    background-color: aquamarine;
+    padding: 20px;
+}
+/* Nested child  */
+section div{
+    background-color: chartreuse;
+}
+/* Direct child  */
+section > div{
+    background-color: red;
+}
+/* all div after section closing tag */
+section~div{
+    background-color: cornflowerblue;
+}
+/* just after section closing tag */
+section+main{
+ background-color: blue;
+}

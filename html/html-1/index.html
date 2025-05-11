@@ -6,32 +6,59 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>List are two types </h1>
-    <p>1. Unorder list</p>
-     <ul>
-       <li>ABC</li>
-       <li>ABC</li>
-       <li>  Nested Unorder List
-        <ul>
-            <li>A</li>
-            <li>A</li>
-            <li>A</li>
-        </ul>
-       </li>
-     </ul>
+   <center>
+    <h1>Tables</h1>
+     <table border="2" cellpadding="5"  cellspacing="0" align="center" >
+        <thead>
+            <tr>
+                <th>MONDAY</th>
+                <th>TUESDAY</th>
+                <th>WEDNESDAY</th>
+                <th>THURSDAY</th>
+                <th>FRIDAY</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3" align="center">html</td>
+                <td rowspan="2" align="center">CSS</td>
+                <td>JS</td>
+            </tr>
+            <tr>
+                <td>html</td>
+                <td>CSS</td>
+                <td>JS</td>
+                <td>React</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="5" align="center">
+                The end
+            </td>
+        </tfoot>
+     </table>
 
-     <p>2. Order list</p>
-     <ol type="A" >
-        <li>ABC</li>
-        <li>ABC</li>
-        <li>ABC
-            <ol type="i">
-                <li>a</li>
-                <li>a</li>
-                <li>a</li>
-            </ol>
-        </li>
-     </ol>
+   </center>
+
+
+   <br><br><br><br>
+ <hr><hr>
+    <center> <h1>Form in Html   </h1></center>
+
+    <form action="" method="get">
+        <fieldset>
+          <legend>Personal Info</legend>
+          
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+      
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+      
 
 </body>
 </html>

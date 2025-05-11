@@ -1,0 +1,20 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: cyan;
+}
+
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+}
+
+/* p,nav, footer{
+    background-color: black;
+    color: white;
+} */
+ .para, #navbar ,footer{
+    background-color: rgb(55, 179, 154);
+    color: rgb(196, 14, 14);
+ }

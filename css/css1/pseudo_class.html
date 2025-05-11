@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn:hover {
+        background-color: blueviolet;
+        cursor: pointer;
+        color: aliceblue;
+        font-size: 2rem;
+      }
+      #btn2:active {
+        background-color: lightskyblue;
+        color: chartreuse;
+      }
+      #box {
+        height: 100px;
+        width: 100px;
+        background-color: bisque;
+        transition: 1s;
+      }
+      #btn3:active + #box {
+        width: 200px;
+        background-color: chartreuse;
+      }
+      a:link {
+        color: aqua;
+      }
+      a:active {
+        color: yellow;
+      }
+      a:visited {
+        color: red;
+      }
+
+      main > section:first-of-type {
+        background-color: blueviolet;
+      }
+
+      main > section:last-of-type {
+        background-color: cornflowerblue;
+      }
+      main > section:nth-last-of-type(2) {
+        background-color: coral;
+      }
+      ol > li:first-child {
+        background-color: aquamarine;
+      }
+      ol > li:last-child {
+        background-color: blueviolet;
+      }
+      ol > li:nth-child(3) {
+        background-color: rgb(176, 176, 197);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo-class Selector :- denoted by : (Single collon)</h1>
+
+    <ol>
+      <li>:hober</li>
+      <li>:active</li>
+      <li>:link</li>
+      <li>:visited</li>
+      <li>:firstchild</li>
+      <li>:lastchild</li>
+      <li>:nth-child()</li>
+      <li>:first-of-type</li>
+      <li>:last-of-type</li>
+      <li>:nth-of-type()</li>
+    </ol>
+
+    <hr />
+    <button class="btn">Click me</button>
+    <button id="btn2">click me</button> <br /><br />
+    <button id="btn3">change div color & width</button>
+    <div id="box"></div>
+
+    <hr />
+    <hr />
+    <a href="https://zomato.com">Zomato</a>
+    <br /><br />
+    <hr />
+    <main>
+      <div>div 1</div>
+      <section>section 1</section>
+      <article>article 1</article>
+      <section>section 2</section>
+      <nav>nav 1</nav>
+      <section>section 3</section>
+      <nav>nav2</nav>
+      <article>article 2</article>
+    </main>
+    <br /><br />
+
+    <ol>
+      <li>Html</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Node</li>
+    </ol>
+  </body>
+</html>
