@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[name]{
+            background-color: yellow;
+        }
+        div[name="box1"]{
+            background-color: red;
+        }
+        /* it is consider fully name */
+        p[name ~="part"]{
+            background-color: aqua;
+        }
+        section[name |="section1"]{
+            background-color: blue;
+        }
+        article[name^="con"]{
+            background-color: cadetblue;
+        }
+        main[name$="pper"]{
+            background-color: blueviolet;
+        }
+        footer[name*="oo"]{
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+   <center> <h1>Attribute Selector</h1></center>
+
+    <div name="box1">div 1</div>
+    <div name="box2">div 1</div>
+
+    <p name="part containt">para 1</p>
+    <section name="section1-container">section 1</section>
+    <article name="contentbox">article 1</article>
+    <main name="mainwrapper">main </main>
+    <footer name="iamfooter">footer 1</footer>
+</body>
+</html>

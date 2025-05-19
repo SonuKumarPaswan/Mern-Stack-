@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #box1{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+          
+
+        }
+        #box2{
+            height: 50vh;
+            width: 50vw;
+            background-color: blanchedalmond;
+        }
+        #parent{
+            height: 30vh;
+            width: 90vw;
+            background-color: chocolate;
+        }
+        #child{
+            height: 50%;
+            width: 50%;
+            background-color: blueviolet;
+        }
+        #box3{
+            height: 1em;
+            width: 1em;
+            background-color: coral;
+            font-size: 100px;
+        }
+        #box4{
+            height: 1rem;
+            width: 1rem;
+            background-color: rgb(184, 132, 54);
+        }
+        /* target the root element */
+
+        /* html{
+            font-size: 46px;
+        } */
+        :root{
+            font-size: 46px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Units </h1>
+    <h2>5 types of units </h2>
+     <!-- 1) px -> pixels are the fixed value
+     2) vh and vw ->viewport height and viewprot width
+     3) % ->this units takes  refrence form its parent element
+     4) em ->by default 1em=16px depends upon current element's font- size
+     5) rem ->by default 1rem =16px depends upon root element's  font -size -->
+
+     <div id="box1"> pixels</div> <br><br>
+     <div id="box2">vh and vw</div><br>
+
+     <div id="parent">
+        <div id="child"></div>
+     </div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+</body>
+</html>
