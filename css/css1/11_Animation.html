@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #box{
+            height: 200px;
+            width: 200px;
+            background-color: blueviolet;
+            position: absolute;
+            top: 100px;
+            animation-name: animate1;
+            animation-duration: 2s;
+            animation-delay: 2s;
+         animation-iteration-count: infinite;
+        }
+        @keyframes animate1 {
+            /* from{
+                top:100px;
+                left: 0;
+                background-color: yellow;
+                border-radius: 0%;
+
+            }
+            to{
+                top: 0;
+                left: calc(100% - 200px);
+                background-color: green;
+                border-radius: 50%;
+
+            } */
+            0%{
+                top: 100px;
+                left:0;
+                background-color: rgb(141, 138, 134);
+            }
+            25%{
+                top: 100px;
+                 left: calc(100% - 200px);
+                background-color: rgb(172, 108, 25);
+            }
+            50%{
+                 top: calc(100% - 200px);
+                  left: calc(100% - 200px);
+                background-color: rgb(116, 94, 66);
+            }
+            75%{
+                 top: calc(100% - 200px);
+                  left:0;
+                background-color: rgb(172, 108, 25);
+            }
+            100%{
+                 top: 100px;
+                left:0;
+                background-color: rgb(95, 58, 10);
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+        <center><h1>Animation In Css </h1></center>
+        <p>We can use the animation in two ways first name the animation and apply the animation </p>
+
+        <div id="box"></div>
+</body>
+</html>

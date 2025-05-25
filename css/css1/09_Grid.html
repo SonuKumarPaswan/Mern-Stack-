@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0 ;
+            box-sizing: border-box;
+        }
+        .gridcontainer{
+            height:80vh;
+            width: 80wh;
+            background-color: yellow;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            justify-items: center;
+        }
+        .gridItem{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(215, 145, 145);
+            border: 2px solid black;
+        }
+        .item5{
+            justify-self: flex-end;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontainer">
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem item5"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+    </div>
+</body>
+</html>
