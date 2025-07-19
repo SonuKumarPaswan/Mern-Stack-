@@ -1,0 +1,16 @@
+<%- include("includes/head.ejs")  %>
+<body>
+    <h1>Instagram Data</h1>
+    <button>Click me !</button>
+     
+    <h1><%= data.name  %></h1>
+    <h2> Followers : <%= data.followers  %></h2>
+    <h3> Following : <%= data.following  %></h3>
+    <% data.posts.map((item)=>{ %>
+            <img width="400px" src="<%= item.image %>" alt="">
+            <p> Likes : <%= item.likes %></p>
+            <p> Comments : <%= item.comments %></p>
+    <%   }) %>
+    
+    <script src="/app.js"></script>
+</body>
