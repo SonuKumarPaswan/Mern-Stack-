@@ -1,0 +1,17 @@
+<%- include("includes/header.ejs") %>
+ <link rel="stylesheet" href="/css/style.css">
+<body>
+        <h1>Quora Post</h1> <br>
+        <% for(post of posts) { %>
+            <div class="post">
+                <h1 class="user"> @ <i><%= post.usernaem %></i></h1>
+                 <p><%= post.content %></p> 
+                 <button><a href="http://localhost:8080/posts/<%= post.id %>"> see in details</a></button>
+                 <button><a href="http://localhost:8080/posts/<%= post.id %>/edit"> Edit details</a></button>
+                 <form action="/posts/<%= post.id %>?_method=DELETE" method="post" >
+                    <button>Delete post</button>
+                 </form>
+            </div>
+            <% } %>
+            <a href="http://localhost:8080/posts/new">Create new post</a>
+</body>
