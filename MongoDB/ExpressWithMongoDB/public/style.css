@@ -1,0 +1,19 @@
+
+.chat{
+     background-color: cadetblue;   
+     width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+   margin-top: 20px;
+}
+.chats{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+}
+.chats> p{
+    background-color: beige;
+    padding: 10PX;
+    border-radius: 10px;
+}
