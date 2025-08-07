@@ -15,29 +15,44 @@ async function main() {
 
 }
 
-const userSchema =new Schema([
+const orderSchema =new Schema(
     {
-        location:String,
-        city:String
+        item:String,
+        price:Number
     }
-])
-const Order=mongoose.model("Order",userSchema);
+)
+const Order=mongoose.model("Order",orderSchema);
 
-const addAdd= async ()=>{
-    await Order.insertMany(
-        {
-            location:"Naya bas gali no-1",
-            city:"Noida"
-        },
-        {
-            location:"Naya bas gali no-2. Noida sector-15",
-            city:"Noida"
-        },
-        {
-            location:"Naya bas gali no-3 Noida sector-16",
-            city:"Noida"
-        }
-    )
-
+const addOrders= async ()=>{
+    let res= await Order.insertMany([
+        {item:"samosa",price:12},
+        {item:"Chocolate",price:102},
+        {item:"Chaumin",price:10},
+    ] )
+    console.log(res)
 }
-console.log(addAdd())
+// addOrders();
+
+const custumerSchema= new Schema({
+    name:String,
+    orders:[
+        {
+            type:Schema.Types.ObjectId,
+            ref:"Order"
+        }
+    ]
+})
+const Customer=mongoose.model("Customer",custumerSchema);
+
+const addCustomer= async()=>{
+    let cust1= new Customer({
+        name:"Rahul",
+    })
+    let order1= await Order.findOne({item:"samosa"})
+    let order2= await Order.findOne({item:"Chocolate"})
+    cust1.orders.push(order1)
+    cust1.orders.push(order2)
+    let res= await cust1.save()
+    console.log(res)
+}
+addCustomer();
